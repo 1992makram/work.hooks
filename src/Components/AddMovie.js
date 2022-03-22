@@ -3,7 +3,7 @@ import { scryRenderedComponentsWithType } from "react-dom/test-utils";
 import Modal from "react-modal";
 import "./addMovie.css";
 Modal.setAppElement("#root");
-const AddMovie = (addNewMovie) => {
+const AddMovie = ({addNewMovie}) => {
   const [modalIsOpen, setIsOpen] = useState(false);
   const [name, setName] = useState("");
   const[rating,setRating] = useState("");

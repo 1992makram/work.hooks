@@ -51,21 +51,24 @@ setType("");
         <h1 className="addMovie-h1">Add A Movie </h1>
         <form>
           <label>Movie name</label>
-          <input type="text" name="name" />
+          <input type="text" name="name" onChange={(e)=>setName(e.target.value)} value={name} />
           <br></br>
           <label>Movie rating</label>
           <div className="rating-search"></div>
-          <input type="number" name="rating" min="1" max="5" />
+          <input type="number" name="rating" min="1" max="5" onChange={(e)=>setRating(e.target.value)} value={rating} />
           <br></br>
           <label>Movie date</label>
-          <input type="date" name="date" />
+          <input type="date" name="date" onChange={(e)=>setDate(e.target.value)} value={date} />
           <br></br>
           <label>Movie description</label>
-          <input type="text" name="description" />
+          <input type="text" name="description" onChange={(e)=>setDescription(e.target.value)} value={description}/>
           <br></br>
           <label>Movie type</label>
-          <input type="text" name="type" />
-
+          <input type="text" name="type" onChange={(e)=>setType(e.target.value)} value={type}/>
+<br></br>
+<br></br>
+<label>image:</label>
+<input type="url" name="image" onChange={(e)=>setImage(e.target.value)} value={image}/>
         </form>
         <button className="Modal-btn" onClick={handleSubmit}>
           submit

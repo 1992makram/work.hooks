@@ -1,5 +1,8 @@
 import "./movieCard.css";
 import Rate from "./Rate";
+import {Link} from "react-router-dom";
+
+
 const MovieCard = ({ movie }) => {
     console.log(movie)
   return (
@@ -15,6 +18,13 @@ const MovieCard = ({ movie }) => {
       <h4>{movie.date}</h4>
       <h5>{movie.type}</h5>
       <p>{movie.description}</p>
+      <div>
+      <button>
+        <Link to={`/descr/${movie.id}`}>Description</Link>
+        </button>
+        
+        </div>
+      
     </div>
     </div>
   );

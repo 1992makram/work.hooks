@@ -13,9 +13,10 @@ img {
 
 .card {
   width: 500px; 
-  margin: 0px auto; 
+  
   background-color:whitesmoke; 
-  ; 
+
+  margin: 10px 0;
 }
 
 .card:hover .card-image img { 
